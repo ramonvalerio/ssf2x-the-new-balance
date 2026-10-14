@@ -1,0 +1,61 @@
+{
+  "window": {
+    "0": {
+      "original": true,
+      "v0.2": true,
+      "nova": true
+    },
+    "1": {
+      "original": false,
+      "v0.2": false,
+      "nova": true
+    },
+    "2": {
+      "original": false,
+      "v0.2": false,
+      "nova": true
+    },
+    "3": {
+      "original": false,
+      "v0.2": false,
+      "nova": true
+    },
+    "4": {
+      "original": false,
+      "v0.2": false,
+      "nova": true
+    },
+    "5": {
+      "original": false,
+      "v0.2": false,
+      "nova": true
+    },
+    "6": {
+      "original": false,
+      "v0.2": false,
+      "nova": true
+    },
+    "7": {
+      "original": false,
+      "v0.2": false,
+      "nova": false
+    },
+    "8": {
+      "original": false,
+      "v0.2": false,
+      "nova": false
+    },
+    "9": {
+      "original": false,
+      "v0.2": false,
+      "nova": false
+    },
+    "10": {
+      "original": false,
+      "v0.2": false,
+      "nova": false
+    }
+  },
+  "hooks_preserve_original_effects": true,
+  "converted_timer_helpers_identical": true
+}

@@ -22,7 +22,7 @@ local function attack_box(obj)
 end
 
 local cols = {"frame", "hitcount"}
-local pf = {"char","old","x","st3","st4","st5","mv88","r55","jug2ac","inv1b3","inv1a1","inv1bf","stop47","hp2a","y","atk18b","cancel2b0","v8","v9","va","atkid","atktype"}
+local pf = {"char","old","x","st3","st4","st5","mv88","r55","jug2ac","inv1b3","inv1a1","inv1bf","stop47","hp2a","y","atk18b","cancel2b0","v8","v9","va","atkid","atktype","buf3f0"}
 for p = 1, 2 do for _, n in ipairs(pf) do cols[#cols + 1] = "p" .. p .. "_" .. n end end
 for i = 1, 4 do for _, n in ipairs({"on","atkid","atktype","y"}) do cols[#cols + 1] = "proj" .. i .. "_" .. n end end
 f:write(table.concat(cols, ",") .. "\n")
@@ -37,7 +37,7 @@ while true do
     if anim > 0x100 and anim < 0x400000 then v8, v9, va = rb(anim + 8), rb(anim + 9), rb(anim + 10) end
     local id, typ = attack_box(b)
     for _, v in ipairs({rb(b+0x391), rb(b+0x3B6), memory.readwordsigned(b+0x06), rb(b+3), rb(b+4), rb(b+5), rb(b+0x88), rb(b+0x55), rb(b+0x2AC), rb(b+0x1B3), rb(b+0x1A1), rb(b+0x1BF),
-                        rb(b+0x47), memory.readwordsigned(b+0x2A), memory.readwordsigned(b+0x0A), rb(b+0x18B), rb(b+0x2B0), v8, v9, va, id, typ}) do
+                        rb(b+0x47), memory.readwordsigned(b+0x2A), memory.readwordsigned(b+0x0A), rb(b+0x18B), rb(b+0x2B0), v8, v9, va, id, typ, rb(b+0x3F0)}) do
       row[#row + 1] = v
     end
   end
