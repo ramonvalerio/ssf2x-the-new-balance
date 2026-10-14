@@ -1,0 +1,18 @@
+{
+  "base_rom": "SSF2X - The New Balance v0.7",
+  "base_zip_sha256": "a0212307e050cec9c1eb22192d3bf2c960e24629a29743c5820d17c1ade54287",
+  "encrypted_test_zip_sha256": "9d0437d7f53a2659809e0240596ee30af5d4562b5941b41f76c219b8bcbc4180",
+  "packaged_v0.8_zip_sha256": "c75904f856387ade3c3bf65e17400090fbfb4184115627fcfae6ab2a0b783796",
+  "decrypted_binary_sha256": "3ad6fa96add8e7f96fa758fffb4c7b7ad6fe2350bdfd6260dd2e25727452e23b",
+  "changed_files_vs_v0.7": ["sfxj.04a"],
+  "encrypted_bytes_changed_vs_v0.7": 84,
+  "decrypted_output_matches_patched_binary": true,
+  "cpu_changes": {
+    "0x95682": "checagem final do Flame Kick passa pela extensão em 0x989c8",
+    "0x964c2": "helper do timer passa a ler a tabela compartilhada em 0x95552",
+    "0x964d6-0x964f1": "checagem da pausa e dos subestados 4/6 do segundo Rekka",
+    "0x989b4": "helper do timer passa a ler a tabela compartilhada em 0x95552",
+    "0x989c8-0x989e3": "checagem original mais exceção restrita ao Rekka do Fei Long"
+  },
+  "tests_file": "work/fei-rekka-flamekick-tests.json"
+}
