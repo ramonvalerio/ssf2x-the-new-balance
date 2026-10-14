@@ -21,4 +21,4 @@ Os 3 botões do mesmo tipo continuam obrigatórios, mas podem ser apertados em a
 
 ## Princípio
 
-Esta é a terceira e última exigência de botões simultâneos no mesmo frame encontrada no jogo. Pelo ADR-0007 (princípio 6), nenhuma regra deve depender de dois dedos caírem no mesmo frame.
+Esta é a terceira e última exigência de botões simultâneos no mesmo frame encontrada no jogo. Pelo ADR-0007 (princípio 5), nenhuma regra deve depender de dois dedos caírem no mesmo frame.
