@@ -1,0 +1,129 @@
+{
+  "cancel_fierce_dp_vs_claw_hitstop": {
+    "original": [
+      12,
+      "0x345678"
+    ],
+    "v0.1": [
+      12,
+      "0x345678"
+    ],
+    "nova": [
+      12,
+      "0x792d4"
+    ]
+  },
+  "cancel_fierce_dp_vs_claw_sliding": {
+    "original": [
+      12,
+      "0x345678"
+    ],
+    "v0.1": [
+      12,
+      "0x345678"
+    ],
+    "nova": [
+      12,
+      "0x345678"
+    ]
+  },
+  "cancel_jab_dp_vs_claw": {
+    "original": [
+      12,
+      "0x345678"
+    ],
+    "v0.1": [
+      12,
+      "0x345678"
+    ],
+    "nova": [
+      12,
+      "0x345678"
+    ]
+  },
+  "cancel_fierce_hadouken_vs_claw": {
+    "original": [
+      12,
+      "0x345678"
+    ],
+    "v0.1": [
+      12,
+      "0x345678"
+    ],
+    "nova": [
+      12,
+      "0x345678"
+    ]
+  },
+  "dp_from_neutral_vs_claw": {
+    "original": [
+      12,
+      "0x345678"
+    ],
+    "v0.1": [
+      12,
+      "0x345678"
+    ],
+    "nova": [
+      12,
+      "0x345678"
+    ]
+  },
+  "cancel_fierce_dp_vs_old_claw": {
+    "original": [
+      12,
+      "0x345678"
+    ],
+    "v0.1": [
+      12,
+      "0x345678"
+    ],
+    "nova": [
+      12,
+      "0x345678"
+    ]
+  },
+  "cancel_fierce_dp_vs_ken": {
+    "original": [
+      12,
+      "0x345678"
+    ],
+    "v0.1": [
+      12,
+      "0x345678"
+    ],
+    "nova": [
+      12,
+      "0x345678"
+    ]
+  },
+  "cancel_fierce_dp_vs_fei": {
+    "original": [
+      12,
+      "0x345678"
+    ],
+    "v0.1": [
+      12,
+      "0x345678"
+    ],
+    "nova": [
+      12,
+      "0x345678"
+    ]
+  },
+  "cancel_fierce_dp_claw_blocking": {
+    "original": [
+      12,
+      "0x345678"
+    ],
+    "v0.1": [
+      12,
+      "0x345678"
+    ],
+    "nova": [
+      12,
+      "0x345678"
+    ]
+  },
+  "converted_timer_helpers_identical": true
+}

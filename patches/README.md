@@ -24,3 +24,4 @@ Por que dois arquivos? No CPS2, um patch IPS vale para um único arquivo interno
 | Versão | Conteúdo |
 |---|---|
 | v0.1 | Fei Long (Chicken Wing em meia-lua; Super na janela do 2º Rekka). Ryu (janela do chute médio abaixado para Super; tatsu aéreo → Super em juggle). Ken (Shoryuken forte com 2º hit de recuo menor contra Ryu, Ken e Claw). Correção dos timers de comando. |
+| v0.2 | v0.1 + Ryu: soco forte em pé → Shoryuken forte conecta no Claw (spec 0008). |

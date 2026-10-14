@@ -22,7 +22,7 @@ Este repositório **não contém ROMs nem nenhum arquivo da Capcom**. Ele distri
 
 A ROM modificada é para jogo local. Ela não é compatível com partidas online contra quem usa a ROM original.
 
-## Mudanças (v0.1)
+## Mudanças (v0.2)
 
 | Personagem | Mudança |
 |---|---|
@@ -31,6 +31,7 @@ A ROM modificada é para jogo local. Ela não é compatível com partidas online
 | Ryu | Chute médio abaixado cancelável em Super durante todos os frames ativos |
 | Ryu | Tatsu aéreo → Super em juggle (quantidade de hits depende da altura) |
 | Ken | Shoryuken forte: 3º hit volta a acertar Ryu, Ken e Claw após o soco forte em pé |
+| Ryu | Soco forte em pé → Shoryuken forte volta a conectar no Claw |
 
 Detalhes de cada mudança: `docs/specs/characters/<personagem>/README.md` e `docs/specs/global/`.
 

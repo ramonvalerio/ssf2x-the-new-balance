@@ -1,0 +1,28 @@
+{
+  "name": "SSF2X - The New Balance",
+  "version": "v0.2",
+  "romset": "ssf2xjr1",
+  "parts": [
+    {
+      "patch": "ssf2x-the-new-balance-v0.2-part1.ips",
+      "file": "sfxj.03c",
+      "original_sha256": "b882934292a392d176dbb20efc0129b57cedd465af0f343a301c3f67f5c822ab",
+      "patched_sha256": "203d9db16ed6a62a376bdb423fa96754e167a9c924316703a23c58e7125982e0",
+      "size": 189
+    },
+    {
+      "patch": "ssf2x-the-new-balance-v0.2-part2.ips",
+      "file": "sfxj.04a",
+      "original_sha256": "6d782ac2d5a994bcf31a087575faba0d0bf8f6fa38c863849de2d52e06d9e8b3",
+      "patched_sha256": "a280468e08bc13138027a60a97450d024ba8f90f46b82ef2966af9e9829031ee",
+      "size": 791
+    }
+  ],
+  "includes": [
+    "docs/specs/global/0007-correcao-timers-de-comando.md",
+    "fei-long: specs 0001, 0002",
+    "ryu: specs 0004, 0005 (v2)",
+    "ken: spec 0006 (v3)",
+    "ryu: spec 0008 (Shoryuken forte em cancelamento contra o Claw)"
+  ]
+}
