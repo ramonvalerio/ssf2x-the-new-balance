@@ -1,0 +1,59 @@
+{
+  "base_rom": "ssf2xjr1 v0.6 (teleporte do Akuma/Dhalsim em ate 3 frames, principio de entrada sem sorte de frame).",
+  "base_zip_sha256": "614f200bd22550f690ceeee633edc0a9404bbe3d8674b5c8ba249a26828dc076",
+  "output_zip_sha256": "eebcb6fa0b11cf03105076acf9f69e252a01b97af538ab6ccb49a34348ae0bfe",
+  "changed_files_vs_base": [
+    "sfxj.03c",
+    "sfxj.04a"
+  ],
+  "decrypted_output_matches_patched_binary": true,
+  "cpu_changes": {
+    "0x7fd28-0x7fd43": "virou jsr $802ec.l + bra.w para o novo filtro em 0x8585a (resto preenchido com nop)",
+    "0x8585a-0x85879": "filtro novo: crMK (kick=2,forca=2,postura=2) OU soco forte (kick=0,forca=4, qualquer postura) -> bra.w 0x80028; senao rts",
+    "0x80028-0x80043": "sem mudanca: regra generica da caixa de ataque, reutilizada (spec 0004)",
+    "0x8584a-0x85859": "ajudante de temporizacao do Guile (destino $99) convertido para usar a rotina compartilhada g (0x8dc60) em vez de tabela local, liberando os 32 bytes usados pelo filtro novo"
+  },
+  "tests": {
+    "standHP": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXXXX..........."
+    },
+    "crHP": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXXXX..........."
+    },
+    "crMK": {
+      "original": "XXXXXXXXX...........",
+      "patched": "XXXXXXXXX..........."
+    },
+    "standMK": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    },
+    "crMP": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    },
+    "crLK": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    },
+    "crHK": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    },
+    "standLP": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    },
+    "crLP": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    },
+    "standMP": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    }
+  },
+  "guile_helper_regression": "comparados os 64 valores possiveis de indice de entrada antes/depois: 0 diferencas"
+}

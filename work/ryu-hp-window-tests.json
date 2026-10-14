@@ -1,0 +1,42 @@
+{
+  "standHP": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXXXX..........."
+  },
+  "crHP": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXXXX..........."
+  },
+  "crMK": {
+    "original": "XXXXXXXXX...........",
+    "patched": "XXXXXXXXX..........."
+  },
+  "standMK": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  },
+  "crMP": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  },
+  "crLK": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  },
+  "crHK": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  },
+  "standLP": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  },
+  "crLP": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  },
+  "standMP": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  }
+}
