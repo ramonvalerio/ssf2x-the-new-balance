@@ -12,7 +12,7 @@ reversal path (0x786d4) runs the stored move ($16a/$16b). $3f0 is cleared at eve
 import sys
 from pathlib import Path
 
-WINDOW = 6
+WINDOW = 4
 base = Path('work/ssf2xjr1-ryu-dp-claw.bin').read_bytes()
 TABLE = bytes.fromhex('0a08080b080809080908080a08080b0d080f09080a0c08080b0809080e0c080a')
 G = 0x8dc60

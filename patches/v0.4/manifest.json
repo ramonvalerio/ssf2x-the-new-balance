@@ -1,0 +1,30 @@
+{
+  "name": "SSF2X - The New Balance",
+  "version": "v0.4",
+  "romset": "ssf2xjr1",
+  "parts": [
+    {
+      "patch": "ssf2x-the-new-balance-v0.4-part1.ips",
+      "file": "sfxj.03c",
+      "original_sha256": "b882934292a392d176dbb20efc0129b57cedd465af0f343a301c3f67f5c822ab",
+      "patched_sha256": "95135d514b147f74c8ebe9d0b2e1eae346052686c63eaa838b308a5083552f14",
+      "size": 222
+    },
+    {
+      "patch": "ssf2x-the-new-balance-v0.4-part2.ips",
+      "file": "sfxj.04a",
+      "original_sha256": "6d782ac2d5a994bcf31a087575faba0d0bf8f6fa38c863849de2d52e06d9e8b3",
+      "patched_sha256": "f1988ef439bdc8e186b66ab07e43360094a61f9822b613ad6ee04ee5485818ff",
+      "size": 1058
+    }
+  ],
+  "includes": [
+    "docs/specs/global/0007-correcao-timers-de-comando.md",
+    "fei-long: specs 0001, 0002",
+    "ryu: specs 0004, 0005 (v2)",
+    "ken: spec 0006 (v3)",
+    "ryu: spec 0008 (Shoryuken forte em cancelamento contra o Claw)",
+    "global: spec 0009 (janela de 4 frames para reversal no levantar)",
+    "dhalsim (novo e antigo): specs 0010/0011 (teleporte com 2 socos ou 2 chutes)"
+  ]
+}

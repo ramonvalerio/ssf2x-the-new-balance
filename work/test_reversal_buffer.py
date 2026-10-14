@@ -42,7 +42,7 @@ for n in range(0, 11):
     o, v, nw = (reversal_after(b, n)[0] for b in builds)
     res['window'][n] = {'original': o, 'v0.2': v, 'nova': nw}
     assert o == v == (n == 0), (n, o, v)
-    assert nw == (n <= 6), (n, nw)
+    assert nw == (n <= 4), (n, nw)
 
 # buffer always consumed at wake-up and never left armed
 u = emu('nova'); u.mem_write(P + 0x3f0, b'\x07'); wake(u); assert rb(u, 0x3f0) == 0
@@ -52,7 +52,7 @@ u = emu('nova'); u.mem_write(P + 0x169, b'\x01'); u.mem_write(P + 0x3f0, b'\x03'
 frame_start(u); assert rb(u, 0x169) == 0 and rb(u, 0x3f0) == 2 and u.reg_read(UC_M68K_REG_D0) == 0
 u = emu('nova'); u.mem_write(P + 0x3f0, b'\x00'); frame_start(u); assert rb(u, 0x3f0) == 0
 # record path keeps d1 = 1 (pending result) like the original
-u = emu('nova'); record(u); assert u.reg_read(UC_M68K_REG_D1) & 0xff == 1 and rb(u, 0x169) == 1 and rb(u, 0x3f0) == 7
+u = emu('nova'); record(u); assert u.reg_read(UC_M68K_REG_D1) & 0xff == 1 and rb(u, 0x169) == 1 and rb(u, 0x3f0) == 5
 res['hooks_preserve_original_effects'] = True
 
 def timer(build, helper, dest, i):

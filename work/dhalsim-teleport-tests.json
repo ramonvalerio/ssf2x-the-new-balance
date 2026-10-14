@@ -1,0 +1,131 @@
+{
+  "novo: 3 socos juntos": {
+    "original": true,
+    "nova": true
+  },
+  "novo: 2 socos juntos (LP+MP)": {
+    "original": false,
+    "nova": true
+  },
+  "novo: 2 socos juntos (MP+HP)": {
+    "original": false,
+    "nova": true
+  },
+  "novo: 2 socos juntos (LP+HP)": {
+    "original": false,
+    "nova": true
+  },
+  "novo: 1 soco": {
+    "original": false,
+    "nova": false
+  },
+  "novo: nada": {
+    "original": false,
+    "nova": false
+  },
+  "novo: soltar 3 socos": {
+    "original": true,
+    "nova": true
+  },
+  "novo: soltar 2 socos": {
+    "original": false,
+    "nova": true
+  },
+  "novo: soltar 1 soco": {
+    "original": false,
+    "nova": false
+  },
+  "novo: segurando 1, aperta 2": {
+    "original": false,
+    "nova": true
+  },
+  "novo: segurando 2, aperta 1": {
+    "original": false,
+    "nova": false
+  },
+  "novo: soco+chute (mascara socos)": {
+    "original": false,
+    "nova": false
+  },
+  "novo: 3 chutes": {
+    "original": true,
+    "nova": true
+  },
+  "novo: 2 chutes": {
+    "original": false,
+    "nova": true
+  },
+  "novo: 1 chute": {
+    "original": false,
+    "nova": false
+  },
+  "novo: soco+chute (mascara chutes)": {
+    "original": false,
+    "nova": false
+  },
+  "antigo: 3 socos juntos": {
+    "original": true,
+    "nova": true
+  },
+  "antigo: 2 socos juntos (LP+MP)": {
+    "original": false,
+    "nova": true
+  },
+  "antigo: 2 socos juntos (MP+HP)": {
+    "original": false,
+    "nova": true
+  },
+  "antigo: 2 socos juntos (LP+HP)": {
+    "original": false,
+    "nova": true
+  },
+  "antigo: 1 soco": {
+    "original": false,
+    "nova": false
+  },
+  "antigo: nada": {
+    "original": false,
+    "nova": false
+  },
+  "antigo: soltar 3 socos": {
+    "original": true,
+    "nova": true
+  },
+  "antigo: soltar 2 socos": {
+    "original": false,
+    "nova": true
+  },
+  "antigo: soltar 1 soco": {
+    "original": false,
+    "nova": false
+  },
+  "antigo: segurando 1, aperta 2": {
+    "original": false,
+    "nova": true
+  },
+  "antigo: segurando 2, aperta 1": {
+    "original": false,
+    "nova": false
+  },
+  "antigo: soco+chute (mascara socos)": {
+    "original": false,
+    "nova": false
+  },
+  "antigo: 3 chutes": {
+    "original": true,
+    "nova": true
+  },
+  "antigo: 2 chutes": {
+    "original": false,
+    "nova": true
+  },
+  "antigo: 1 chute": {
+    "original": false,
+    "nova": false
+  },
+  "antigo: soco+chute (mascara chutes)": {
+    "original": false,
+    "nova": false
+  },
+  "converted_timer_helpers_identical": true
+}

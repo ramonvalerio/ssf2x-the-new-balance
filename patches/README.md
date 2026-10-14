@@ -26,3 +26,4 @@ Por que dois arquivos? No CPS2, um patch IPS vale para um único arquivo interno
 | v0.1 | Fei Long (Chicken Wing em meia-lua; Super na janela do 2º Rekka). Ryu (janela do chute médio abaixado para Super; tatsu aéreo → Super em juggle). Ken (Shoryuken forte com 2º hit de recuo menor contra Ryu, Ken e Claw). Correção dos timers de comando. |
 | v0.2 | v0.1 + Ryu: soco forte em pé → Shoryuken forte conecta no Claw (spec 0008). |
 | v0.3 | v0.2 + global: janela de 6 frames para reversal no levantar (spec 0009). |
+| v0.4 | v0.3 com a janela de reversal reduzida para 4 frames + Dhalsim (novo e antigo): teleporte com 2 socos ou 2 chutes (specs 0010/0011). |
