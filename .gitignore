@@ -51,3 +51,11 @@ Thumbs.db
 
 # Os patches .ips SÃO versionados: contêm só as diferenças, sem a ROM.
 !*.ips
+
+# emulador de teste isolado (ROMs de calibração)
+work/emutest/
+work/dumps/
+work/shots/
+work/bisect/
+*.gd
+work/probe-map.json
