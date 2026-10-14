@@ -1,6 +1,6 @@
 from pathlib import Path
 import zipfile, hashlib, json, shutil
-root = Path('characters/ryu/new/super-buffer'); root.mkdir(parents=True, exist_ok=True)
+root = Path('docs/specs/characters/ryu/new/0003-ryu-buffer-do-super.md'); root.mkdir(parents=True, exist_ok=True)
 vanilla = zipfile.ZipFile('ssf2xjr1.zip')
 new_zip = Path('work/ryu-super-buffer-enc.zip'); new = zipfile.ZipFile(new_zip)
 base_zip = Path('backup/ssf2xjr1-rekka-super.zip')
@@ -20,13 +20,13 @@ o, n = vanilla.read('sfxj.03c'), new.read('sfxj.03c')
 shutil.copyfile(new_zip, root / 'ssf2xjr1.zip')
 with zipfile.ZipFile(root / 'ssf2xjr1.zip') as z: assert z.testzip() is None
 report = {
-    'base_rom': 'ssf2xjr1 com Chicken Wing + Rekka/Super do Fei Long (characters/fei-long/new/rekka-super)',
+    'base_rom': 'ssf2xjr1 com Chicken Wing + Rekka/Super do Fei Long (docs/specs/characters/fei-long/new/0002-rekka-cancela-para-super.md)',
     'base_zip_sha256': sha(base_zip),
     'output_zip_sha256': sha(root / 'ssf2xjr1.zip'),
     'rom_file': 'sfxj.03c',
     'changed_files_vs_base': ['sfxj.03c'],
     'encrypted_bytes_changed_vs_base': sum(1 for x, y in zip(zipfile.ZipFile(base_zip).read('sfxj.03c'), n) if x != y),
-    'ips_base': 'sfxj.03c original (sem nenhum patch). As mudanças do Fei Long estão em sfxj.04a (ver characters/fei-long).',
+    'ips_base': 'sfxj.03c original (sem nenhum patch). As mudanças do Fei Long estão em sfxj.04a (ver docs/specs/characters/fei-long).',
     'decrypted_output_matches_patched_binary': True,
     'cpu_changes': {
         '0x7fc06-0x7fc21': 'Shinku Hadouken do Ryu novo, passo 3 do reconhecedor ($A0=4): além de frente (→ passo 4), aceita baixo (→ pula para o passo 5, que espera baixo-frente)',

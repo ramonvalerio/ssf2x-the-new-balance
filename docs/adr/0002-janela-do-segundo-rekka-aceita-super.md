@@ -25,4 +25,4 @@ Quer-se que, durante a janela de aceitação do 3º Rekka (a janela que segue o 
 
 - Risco principal: a checagem de barra cheia e a checagem de comando do Super precisam ser lidas sem corromper o estado que a checagem do 3º Rekka também usa (mesmo buffer de input, possivelmente mesmos registradores/flags). Exige inspecionar a rotina da janela do 2º→3º Rekka em `work/fei-special.asm` antes de decidir o ponto exato do desvio.
 - Precisa validar que o jogador não pode "roubar" o Super sem barra cheia nem acidentalmente cancelar para Super ao tentar emendar o 3º Rekka normalmente (ambiguidade de input: o comando do Super não deve colidir com o comando do 3º Rekka).
-- Ver especificação funcional detalhada em `docs/specs/0002-rekka-cancela-para-super.md`.
+- Ver especificação funcional detalhada em `docs/specs/characters/fei-long/new/0002-rekka-cancela-para-super.md`.

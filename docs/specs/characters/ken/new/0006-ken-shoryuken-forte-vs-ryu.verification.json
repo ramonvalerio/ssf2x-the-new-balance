@@ -1,0 +1,287 @@
+{
+  "base_rom": "docs/specs/global/0007-correcao-timers-de-comando.md (todas as mudanças anteriores + correção dos timers)",
+  "base_zip_sha256": "ebcc4d648da7724b2fa97ad65b37827e9414a2334def837a51fe62dfad6c1a55",
+  "output_zip_sha256": "ef45b73a18bf98b2598d9df1a070bebfe7186fbf61b8f7192ba9445d89dc1291",
+  "changed_files_vs_base": [
+    "sfxj.03c",
+    "sfxj.04a"
+  ],
+  "decrypted_output_matches_patched_binary": true,
+  "diagnosis": {
+    "captures": [
+      "work/logs/movements-20261014-025955.csv (Ken x Ryu)",
+      "work/logs/movements-20261014-030658.csv e -030741.csv (Ken x Claw)",
+      "work/logs/movements.csv (Ken x Fei, sem x)"
+    ],
+    "hit2_pushback_curve": "curva 2 (8,8,8,7,7,7,6,...; 78 px), tabela 0x79250 (dados crus)",
+    "hit3_box_44": "x=-27 rx=26 (alcance 53 px à frente do Ken no 1º frame ativo)",
+    "ryu_hitstun_boxes_24_17_16": "pernas x=+13 rx=20, corpo x=+33 rx=20, cabeça x=+42 rx=10 (recuadas)",
+    "miss_margin": "ponta da caixa a 763, pernas do Ryu a partir de 767 no frame 153 (erra por 4 px)",
+    "with_medium_curve": "v1 (curva 1): simulação frame a frame mostrou acerto marginal no Ryu (58 px) e ERRO no Ken x Ken com lado trocado",
+    "chosen_curve": "curva 6 (4,4,4,3,3,...; 39 px): acerta em todos os combos normais capturados de Ryu, Ken e Claw, defensor a ~52 px; simulação em work/ken_dp_reach.py",
+    "ken_vs_ken_capture": "work/logs/movements-20261014-033225.csv",
+    "claw": "curva 6: 3º hit acerta nos combos fora do canto (~52 px), work/ken_dp_reach.py; 1º hit do Shoryuken continua errando no Claw (original), sem impedir a derrubada"
+  },
+  "cpu_changes": {
+    "0x7ad16": "move.b $4c(a6),$1fd(a6) -> jsr $8aefa (instrução original mantida dentro do hook)",
+    "0x8aeea / 0x8b0aa / 0x8b24a": "helpers de timer convertidos para jsr g (0x8dc60), mesmos valores; v3 inclui também 0x8b5d8",
+    "0x8aefa / 0x8b0ba / 0x8b25a / 0x8b5e8": "checagens: defensor Ryu (0), Ken (4) ou Claw (11), versão nova; oponente Ken novo, $3=$0C, $88=4, caixa de ataque atual 43 -> $2a1=7 (curva 6)"
+  },
+  "tests": {
+    "ken_dp_hit2_vs_ryu": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        7
+      ]
+    },
+    "ken_dp_hit1_vs_ryu": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit3_vs_ryu": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_other_special_vs_ryu": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_normal_box43_vs_ryu": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "old_ken_vs_ryu": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ryu_attacker_vs_ryu": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit2_vs_old_ryu": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit2_vs_ken": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        7
+      ]
+    },
+    "ken_dp_hit2_vs_old_ken": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit2_vs_chunli": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit2_vs_fei": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit2_vs_claw": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        7
+      ]
+    },
+    "ken_dp_hit2_vs_old_claw": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit2_vs_bison": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit2_vs_cammy": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit2_vs_deejay": {
+      "original": [
+        2,
+        0
+      ],
+      "anterior": [
+        2,
+        0
+      ],
+      "nova": [
+        2,
+        0
+      ]
+    },
+    "ken_dp_hit2_vs_ryu_prior": {
+      "original": [
+        2,
+        4
+      ],
+      "anterior": [
+        2,
+        4
+      ],
+      "nova": [
+        2,
+        7
+      ]
+    },
+    "converted_timer_helpers_identical": true
+  },
+  "version": 3,
+  "previous_version_zip": "backup/ssf2xjr1-ken-dp-v2.zip"
+}

@@ -1,6 +1,6 @@
 from pathlib import Path
 import zipfile, hashlib, json, shutil
-root = Path('characters/fei-long/new/rekka-super'); root.mkdir(parents=True, exist_ok=True)
+root = Path('docs/specs/characters/fei-long/new/0002-rekka-cancela-para-super.md'); root.mkdir(parents=True, exist_ok=True)
 vanilla = zipfile.ZipFile('ssf2xjr1.zip').read('sfxj.04a')
 current_zip = Path('Fightcade/emulator/fbneo/ROMs/ssf2xjr1.zip')
 cw = zipfile.ZipFile(current_zip).read('sfxj.04a')
@@ -30,7 +30,7 @@ shutil.copyfile(new_zip, root / 'ssf2xjr1.zip')
 with zipfile.ZipFile(root / 'ssf2xjr1.zip') as z: assert z.testzip() is None
 sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
 report = {
-    'base_rom': 'ssf2xjr1 com Chicken Wing em meia-lua (characters/fei-long/new/chicken-wing-half-circle)',
+    'base_rom': 'ssf2xjr1 com Chicken Wing em meia-lua (docs/specs/characters/fei-long/new/0001-chicken-wing-meia-lua.md)',
     'base_zip_sha256': sha(current_zip),
     'output_zip_sha256': sha(root / 'ssf2xjr1.zip'),
     'vanilla_zip_sha256': sha('ssf2xjr1.zip'),

@@ -32,7 +32,7 @@ A ROM modificada é para jogo local. Ela não é compatível com partidas online
 | Ryu | Tatsu aéreo → Super em juggle (quantidade de hits depende da altura) |
 | Ken | Shoryuken forte: 3º hit volta a acertar Ryu, Ken e Claw após o soco forte em pé |
 
-Detalhes de cada mudança: `characters/<personagem>/README.md` e `docs/specs/`.
+Detalhes de cada mudança: `docs/specs/characters/<personagem>/README.md` e `docs/specs/global/`.
 
 ## Estrutura
 
@@ -40,10 +40,9 @@ Detalhes de cada mudança: `characters/<personagem>/README.md` e `docs/specs/`.
 |---|---|
 | `patches/` | Patches por versão (`.ips` + `manifest.json` com hashes) |
 | `tools/` | `build_rom.py`, que monta a ROM a partir da sua cópia |
-| `characters/` | Documentação das mudanças por personagem (versões nova e antiga) |
-| `fixes/` | Correções gerais |
+| `docs/specs/characters/<personagem>/{new,old}/` | Specs das mudanças por personagem e versão (com `verification.json`) |
+| `docs/specs/global/` | Specs de mudanças globais do jogo |
 | `docs/adr/` | Decisões técnicas e princípios do projeto |
-| `docs/specs/` | Especificação de cada mudança de gameplay |
 | `work/` | Scripts de engenharia reversa, patch e teste (emulação 68000 fiel ao CPS2), captura Lua e logs |
 
 ## Desenvolvimento

@@ -5,7 +5,7 @@ from cps2emu import CPS2, raw_program
 
 builds = {
     'original': (Path('work/ssf2xjr1-decrypted.bin').read_bytes(), raw_program('ssf2xjr1.zip')),
-    'com_problema': (Path('work/ssf2xjr1-ryu-air-tatsu-juggle2.bin').read_bytes(), raw_program('characters/ryu/new/air-tatsu-super-juggle/ssf2xjr1.zip')),
+    'com_problema': (Path('work/ssf2xjr1-ryu-air-tatsu-juggle2.bin').read_bytes(), raw_program('backup/ssf2xjr1-before-timer-fix.zip')),
     'corrigida': (Path('work/ssf2xjr1-fixed.bin').read_bytes(), raw_program('work/fixed-enc.zip')),
 }
 HELPERS = {0x953dc: 0xb1, 0x956b0: 0x95, 0x7fd10: 0xa1, 0x80014: 0xe1, 0x7fb48: 0x99, 0x7fe72: 0x95,

@@ -13,7 +13,7 @@ A ROM `ssf2xjr1.zip` contém arquivos cifrados pelo encoder do CPS2 (ex.: `sfxj.
 - Fazer a engenharia reversa das rotinas em 68000 a partir do binário descriptografado (disassembly manual, guardado em `work/*.asm`), identificando as tabelas de reconhecimento de comando e as rotinas de movimento especial por personagem.
 - Validar cada mudança de reconhecimento de comando com emulação 68000 isolada via Unicorn (`work/test_command.py`, `work/command-tests.json`), comparando a execução original vs. modificada com as estruturas de memória de P1 e P2, antes de reempacotar a ROM.
 - Reempacotar com `work/package_rom.py`, gerar um `.ips` do arquivo interno alterado (não do ZIP) e descriptografar novamente o resultado final para confirmar que corresponde byte a byte ao binário pretendido.
-- Documentar cada mudança em `characters/<personagem>/<new|old>/<nome-da-mudanca>/` com `LEIA-ME.txt` (instruções de teste em português) e `verification.json` (hashes e validação). O ZIP de teste fica só na máquina local (ignorado pelo git).
+- Documentar cada mudança em `docs/specs/characters/<personagem>/<new|old>/` com `LEIA-ME.txt` (instruções de teste em português) e `verification.json` (hashes e validação). O ZIP de teste fica só na máquina local (ignorado pelo git).
 - Publicar as mudanças apenas como patches centrais por versão em `patches/<versão>/` (um `.ips` por arquivo interno alterado, com nome do projeto, mais um `manifest.json` com os hashes). O usuário monta a ROM a partir da própria cópia com `tools/build_rom.py`. Nenhum arquivo da Capcom é versionado (ver `.gitignore`).
 
 ## Consequências

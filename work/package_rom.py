@@ -1,6 +1,6 @@
 from pathlib import Path
 import zipfile,hashlib,json,copy
-root=Path('characters/fei-long/new/chicken-wing-half-circle'); root.mkdir(parents=True,exist_ok=True)
+root=Path('docs/specs/characters/fei-long/new/0001-chicken-wing-meia-lua.md'); root.mkdir(parents=True,exist_ok=True)
 a=zipfile.ZipFile('ssf2xjr1.zip'); b=zipfile.ZipFile('chicken-wing-test.zip')
 old=a.read('sfxj.04a'); new=b.read('sfxj.04a')
 diff=[i for i,(x,y) in enumerate(zip(old,new)) if x!=y]

@@ -1,0 +1,48 @@
+{
+  "base_rom": "ssf2xjr1 com as mudanças do Fei Long (docs/specs/characters/fei-long/new/0002-rekka-cancela-para-super.md). Não inclui o buffer de comando do Ryu (descartado).",
+  "base_zip_sha256": "959cfdb2ef2e9fcd90bd5fed35b6e808d7df03d757654d79435d21c322e1a577",
+  "output_zip_sha256": "9e0a1afa37c1223786955544ff435b93a9aa4e0d816db474e3160423736291a7",
+  "changed_files_vs_base": [
+    "sfxj.03c",
+    "sfxj.04a"
+  ],
+  "ips_base": "removido: patches individuais substituídos pela versão central em patches/",
+  "decrypted_output_matches_patched_binary": true,
+  "cpu_changes": {
+    "0x78e18": "tabela de rotinas de golpe normal: Ryu novo aponta para 0x7fd28 (antes 0x802ec)",
+    "0x7fd10": "helper do timer do Shinku Hadouken passa a ler a tabela aleatória idêntica em 0x7f9d0",
+    "0x7fd28-0x7fd43": "chama a rotina original 0x802ec; se o golpe for chute médio abaixado ($186=2, $187=2, $188=2), segue para 0x80028",
+    "0x80014": "helper do timer do Red Hadouken passa a ler a tabela idêntica em 0x7f9d0",
+    "0x80028-0x80043": "caixa de ataque ativa (byte +0x0C do quadro de animação) -> $2B0 = $FF (Super liberado); depois que a caixa some -> $2B0 = 0; durante o startup mantém a contagem original"
+  },
+  "tests": {
+    "crMK": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXXXX..........."
+    },
+    "crMK_long_active": {
+      "original": "XXXXXXX...............",
+      "patched": "XXXXXXXXXXXXX........."
+    },
+    "crMK_hitstop": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXXXX..........."
+    },
+    "crLK": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    },
+    "crHK": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    },
+    "standMK": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    },
+    "crMP": {
+      "original": "XXXXXXX.............",
+      "patched": "XXXXXXX............."
+    }
+  }
+}

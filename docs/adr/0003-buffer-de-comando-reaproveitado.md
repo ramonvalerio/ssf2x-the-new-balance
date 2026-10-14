@@ -16,7 +16,7 @@ No jogo original:
 
 - Não criar um buffer novo de inputs. Em vez disso, relaxar o passo do reconhecedor do Super que vem logo depois do primeiro ↓ ↘: aceitar ↓ como continuação, pulando o →. Assim, o meia-lua usado no normal é reaproveitado como o primeiro meia-lua do Super.
 - Mexer só no reconhecedor do Super do personagem. A regra de quando o cancelamento é permitido (`$2B0`) continua a original.
-- Fazer a mudança por personagem, começando pelo Ryu. Cada personagem terá sua própria entrega em `characters/<personagem>/new/`.
+- Fazer a mudança por personagem, começando pelo Ryu. Cada personagem terá suas specs em `docs/specs/characters/<personagem>/new/`.
 
 ## Alternativas descartadas
 

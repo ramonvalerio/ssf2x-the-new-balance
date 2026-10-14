@@ -1,6 +1,6 @@
 from pathlib import Path
 import zipfile, hashlib, json, shutil
-root = Path('characters/ryu/new/crmk-super-cancel-window'); root.mkdir(parents=True, exist_ok=True)
+root = Path('docs/specs/characters/ryu/new/0004-ryu-janela-de-cancelamento-cr-mk.md'); root.mkdir(parents=True, exist_ok=True)
 vanilla = zipfile.ZipFile('ssf2xjr1.zip')
 base_zip = Path('backup/ssf2xjr1-rekka-super.zip'); base = zipfile.ZipFile(base_zip)
 new_zip = Path('work/ryu-crmk-enc.zip'); new = zipfile.ZipFile(new_zip)
@@ -20,7 +20,7 @@ for f in ('sfxj.03c', 'sfxj.04a'):
 shutil.copyfile(new_zip, root / 'ssf2xjr1.zip')
 with zipfile.ZipFile(root / 'ssf2xjr1.zip') as z: assert z.testzip() is None
 report = {
-    'base_rom': 'ssf2xjr1 com as mudanças do Fei Long (characters/fei-long/new/rekka-super). Não inclui o buffer de comando do Ryu (descartado).',
+    'base_rom': 'ssf2xjr1 com as mudanças do Fei Long (docs/specs/characters/fei-long/new/0002-rekka-cancela-para-super.md). Não inclui o buffer de comando do Ryu (descartado).',
     'base_zip_sha256': sha(base_zip),
     'output_zip_sha256': sha(root / 'ssf2xjr1.zip'),
     'changed_files_vs_base': [n for n in base.namelist() if base.read(n) != new.read(n)],

@@ -19,9 +19,9 @@
     }
   ],
   "includes": [
-    "fixes/timer-tables",
-    "characters/fei-long: chicken-wing-half-circle, rekka-super",
-    "characters/ryu: crmk-super-cancel-window, air-tatsu-super-juggle (v2)",
-    "characters/ken: shoryuken-hit2-pushback (v3)"
+    "docs/specs/global/0007-correcao-timers-de-comando.md",
+    "fei-long: specs 0001, 0002",
+    "ryu: specs 0004, 0005 (v2)",
+    "ken: spec 0006 (v3)"
   ]
 }

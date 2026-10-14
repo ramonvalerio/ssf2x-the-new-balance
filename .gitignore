@@ -5,7 +5,7 @@
 # Emulador, ROMs, saves e configurações locais
 Fightcade/
 
-# ROMs e arquivos compactados (inclui os ZIPs entregues em characters/ e fixes/)
+# ROMs e arquivos compactados (inclui ZIPs de teste locais)
 *.zip
 *.rar
 *.7z

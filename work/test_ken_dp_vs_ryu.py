@@ -8,7 +8,7 @@ from unicorn.m68k_const import UC_M68K_REG_A6, UC_M68K_REG_A7, UC_M68K_REG_D0, U
 assert Path('work/ken-verify.bin').read_bytes() == Path('work/ssf2xjr1-ken-dp-ryu.bin').read_bytes()
 builds = {
     'original': (Path('work/ssf2xjr1-decrypted.bin').read_bytes(), raw_program('ssf2xjr1.zip')),
-    'anterior': (Path('work/ssf2xjr1-fixed.bin').read_bytes(), raw_program('fixes/timer-tables/ssf2xjr1.zip')),
+    'anterior': (Path('work/ssf2xjr1-fixed.bin').read_bytes(), raw_program('backup/ssf2xjr1-timer-fix.zip')),
     'nova': (Path('work/ssf2xjr1-ken-dp-ryu.bin').read_bytes(), raw_program('work/ken-dp-ryu-enc.zip')),
 }
 DEF, OPP, FRAME, STOP = 0xff884e, 0xff844e, 0xff9800, 0x300000

@@ -68,7 +68,7 @@ Isso levanta uma possibilidade que não consegui descartar com os recursos desta
 - `work/fei-special.asm` — já contém o disassembly dos blocos citados (endereços `0x096bb2–0x096d34` e `0x0963d8–0x0964d2`); não precisei adicionar nada novo, pois o disassembly já cobria essas rotinas (o arquivo não é só sobre Chicken Wing).
 - `Fightcade/emulator/fbneo/fbneo-training-mode/games/ssf2xjr1/character_specific.lua` (linhas ~826–880) — memory_map usado para derivar os offsets de struct.
 - `Fightcade/emulator/fbneo/fbneo-training-mode/games/ssf2xjr1/ssf2xjr1.lua` (linhas ~1030–1036, ~1175–1180) — endereços absolutos de RAM usados para a derivação.
-- `docs/adr/0002-janela-do-segundo-rekka-aceita-super.md` e `docs/specs/0002-rekka-cancela-para-super.md` — contexto/objetivo final (não implementado).
+- `docs/adr/0002-janela-do-segundo-rekka-aceita-super.md` e `docs/specs/characters/fei-long/new/0002-rekka-cancela-para-super.md` — contexto/objetivo final (não implementado).
 
 ## Próximo passo sugerido (fora do escopo desta tarefa)
 
