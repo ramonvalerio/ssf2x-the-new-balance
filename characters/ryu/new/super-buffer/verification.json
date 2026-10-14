@@ -1,0 +1,82 @@
+{
+  "base_rom": "ssf2xjr1 com Chicken Wing + Rekka/Super do Fei Long (characters/fei-long/new/rekka-super)",
+  "base_zip_sha256": "959cfdb2ef2e9fcd90bd5fed35b6e808d7df03d757654d79435d21c322e1a577",
+  "output_zip_sha256": "2d0f863f1d1076618c824e1264fc94c7abdbc1a9df9dcde81b6c9439dd06917f",
+  "rom_file": "sfxj.03c",
+  "changed_files_vs_base": [
+    "sfxj.03c"
+  ],
+  "encrypted_bytes_changed_vs_base": 16,
+  "ips_base": "removido: patches individuais substituídos pela versão central em patches/",
+  "decrypted_output_matches_patched_binary": true,
+  "cpu_changes": {
+    "0x7fc06-0x7fc21": "Shinku Hadouken do Ryu novo, passo 3 do reconhecedor ($A0=4): além de frente (→ passo 4), aceita baixo (→ pula para o passo 5, que espera baixo-frente)"
+  },
+  "tests": {
+    "full_236236P": {
+      "original": true,
+      "patched": true,
+      "patched_p2": true
+    },
+    "buffered_23_236P": {
+      "original": false,
+      "patched": true,
+      "patched_p2": true
+    },
+    "buffered_hold_df": {
+      "original": false,
+      "patched": true,
+      "patched_p2": true
+    },
+    "buffered_slow_3f": {
+      "original": false,
+      "patched": true,
+      "patched_p2": true
+    },
+    "single_qcf_P": {
+      "original": false,
+      "patched": false,
+      "patched_p2": false
+    },
+    "buffered_no_second_df": {
+      "original": false,
+      "patched": false,
+      "patched_p2": false
+    },
+    "buffered_no_button": {
+      "original": false,
+      "patched": false,
+      "patched_p2": false
+    },
+    "kick_instead_of_punch": {
+      "original": false,
+      "patched": false,
+      "patched_p2": false
+    },
+    "junk_back_then_23_236": {
+      "original": false,
+      "patched": true,
+      "patched_p2": true
+    },
+    "downback_after_df": {
+      "original": false,
+      "patched": false,
+      "patched_p2": false
+    },
+    "timeout_on_df": {
+      "original": false,
+      "patched": false,
+      "patched_p2": false
+    }
+  },
+  "cancel_tests": {
+    "crMK_hit_cancel_on": {
+      "original": false,
+      "patched": true
+    },
+    "crMK_whiff_cancel_off": {
+      "original": false,
+      "patched": false
+    }
+  }
+}

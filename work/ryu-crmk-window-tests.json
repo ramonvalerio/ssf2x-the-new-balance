@@ -1,0 +1,30 @@
+{
+  "crMK": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXXXX..........."
+  },
+  "crMK_long_active": {
+    "original": "XXXXXXX...............",
+    "patched": "XXXXXXXXXXXXX........."
+  },
+  "crMK_hitstop": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXXXX..........."
+  },
+  "crLK": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  },
+  "crHK": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  },
+  "standMK": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  },
+  "crMP": {
+    "original": "XXXXXXX.............",
+    "patched": "XXXXXXX............."
+  }
+}

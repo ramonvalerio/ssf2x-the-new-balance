@@ -1,0 +1,47 @@
+TATSU AÉREO + SUPER (JUGGLE) — RYU — SSF2XJR1
+
+Quando o tatsu aéreo do Ryu novo acerta e derruba o adversário, o Super (Shinku Hadouken) pode acertá-lo enquanto ele ainda está caindo, antes de tocar o chão.
+
+Como fazer: pulo + tatsu aéreo (↓ ↙ ← + chute no ar) acertando o adversário. Assim que o Ryu pousar, faça ↓ ↘ → ↓ ↘ → + soco (com a barra cheia).
+(Direções olhando para a direita. Inverta ao olhar para a esquerda.)
+
+O QUE MUDOU
+- Antes: durante a queda depois do tatsu aéreo, o adversário não tinha nenhuma caixa de vulnerabilidade, e o Super passava direto por ele. A captura feita no jogo confirmou isso.
+- Agora: só nessa situação, e só para o projétil do Super do Ryu, o adversário ganha a caixa de vulnerabilidade de pernas da tabela dele. Isso vale enquanto ele estiver em estado de golpe e caindo do knockdown (reação $1C).
+- Nada muda nos outros golpes, nos outros personagens nem na queda depois de outros tipos de golpe.
+- VERSÃO 2 — quantidade de hits depende da altura (exige timing):
+  - 1º hit: vale em qualquer altura enquanto o adversário está caindo do tatsu. Não vale depois que ele toca o chão nem no quique.
+  - Hits seguintes: só valem com o adversário ainda no ar e baixo, até 24 pixels acima do chão.
+  - Super acertado com o adversário alto: 1 hit. Super acertado com o adversário quase no chão: 2 hits ou mais.
+- O acerto entra no sistema normal de dano. Como o adversário ainda está em estado de golpe, ele deve contar como combo.
+
+Esta ROM inclui todas as mudanças anteriores: Fei Long (Chicken Wing em meia-lua e Super na janela do 2º Rekka) e Ryu (janela maior do chute médio abaixado para Super).
+
+COMO TESTAR
+1. Feche o emulador e abra pelo atalho "SSF2X (teste)". A ROM nova já está em Fightcade/emulator/fbneo/ROMs/ssf2xjr1.zip.
+2. Com o Ryu novo e a barra cheia: tatsu aéreo acertando o adversário e, assim que pousar, ↓ ↘ → ↓ ↘ → + soco.
+   Teste soltando o Super cedo (adversário alto: deve dar 1 hit) e mais tarde (adversário quase no chão: 2 hits ou mais).
+3. Observe:
+   - se o Super acerta o adversário caindo;
+   - se o contador de combo sobe;
+   - se o adversário cai e levanta normalmente depois.
+4. Para comparar, faça um Super sem o tatsu antes e outros golpes no adversário caindo; tudo deve seguir como antes.
+5. Se não funcionar, rode o script work/lua/capture-movements.lua durante o teste (como da outra vez) e me avise.
+
+Backups:
+- backup/ssf2xjr1-ryu-air-tatsu-juggle-1hit.zip: versão 1 desta entrega (sempre 1 hit).
+- backup/ssf2xjr1-ryu-crmk-window.zip: versão anterior (Fei Long + chute médio abaixado do Ryu).
+- backup/ssf2xjr1.zip: original.
+
+VALIDAÇÃO
+- A rotina de colisão das caixas do defensor foi executada em emulação 68000 isolada com Unicorn, comparando a ROM anterior com a nova.
+- A caixa nova só aparece com o projétil do Super do Ryu e com o defensor caindo do knockdown $1C. Todos os casos com caixas reais, outros tipos de ataque, outros estados, outra reação e outro dono continuam idênticos.
+- As tabelas de tempo unificadas (duas do Ryu e uma do Ken) produzem os mesmos valores.
+- A ROM final foi descriptografada novamente e corresponde exatamente ao binário alterado. Mudaram sfxj.03c e sfxj.04a.
+- AINDA NÃO TESTADO NO JOGO. Pontos incertos, que só o teste real confirma:
+  - se a caixa das pernas fica na altura do projétil durante toda a queda;
+  - como a animação de reação se comporta com o adversário no ar.
+- Também não confirmei se outros golpes do Ryu (Shoryuken, por exemplo) derrubam com a mesma reação $1C. Se derrubarem, o Super também vai acertar depois deles.
+
+PATCH: não há mais patches por mudança. A versão completa fica em patches/ (ex.: patches/v0.1/) e é aplicada sobre a sua própria ROM com: python tools/build_rom.py <ssf2xjr1.zip original> <saida.zip>
+Detalhes e hashes: verification.json.

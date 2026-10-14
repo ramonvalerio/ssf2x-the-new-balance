@@ -1,0 +1,255 @@
+{
+  "ken_dp_hit2_vs_ryu": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      7
+    ]
+  },
+  "ken_dp_hit1_vs_ryu": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit3_vs_ryu": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_other_special_vs_ryu": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_normal_box43_vs_ryu": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "old_ken_vs_ryu": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ryu_attacker_vs_ryu": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit2_vs_old_ryu": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit2_vs_ken": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      7
+    ]
+  },
+  "ken_dp_hit2_vs_old_ken": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit2_vs_chunli": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit2_vs_fei": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit2_vs_claw": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      7
+    ]
+  },
+  "ken_dp_hit2_vs_old_claw": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit2_vs_bison": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit2_vs_cammy": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit2_vs_deejay": {
+    "original": [
+      2,
+      0
+    ],
+    "anterior": [
+      2,
+      0
+    ],
+    "nova": [
+      2,
+      0
+    ]
+  },
+  "ken_dp_hit2_vs_ryu_prior": {
+    "original": [
+      2,
+      4
+    ],
+    "anterior": [
+      2,
+      4
+    ],
+    "nova": [
+      2,
+      7
+    ]
+  },
+  "converted_timer_helpers_identical": true
+}

@@ -1,0 +1,57 @@
+{
+  "full_236236P": {
+    "original": true,
+    "patched": true,
+    "patched_p2": true
+  },
+  "buffered_23_236P": {
+    "original": false,
+    "patched": true,
+    "patched_p2": true
+  },
+  "buffered_hold_df": {
+    "original": false,
+    "patched": true,
+    "patched_p2": true
+  },
+  "buffered_slow_3f": {
+    "original": false,
+    "patched": true,
+    "patched_p2": true
+  },
+  "single_qcf_P": {
+    "original": false,
+    "patched": false,
+    "patched_p2": false
+  },
+  "buffered_no_second_df": {
+    "original": false,
+    "patched": false,
+    "patched_p2": false
+  },
+  "buffered_no_button": {
+    "original": false,
+    "patched": false,
+    "patched_p2": false
+  },
+  "kick_instead_of_punch": {
+    "original": false,
+    "patched": false,
+    "patched_p2": false
+  },
+  "junk_back_then_23_236": {
+    "original": false,
+    "patched": true,
+    "patched_p2": true
+  },
+  "downback_after_df": {
+    "original": false,
+    "patched": false,
+    "patched_p2": false
+  },
+  "timeout_on_df": {
+    "original": false,
+    "patched": false,
+    "patched_p2": false
+  }
+}

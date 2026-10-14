@@ -1,0 +1,57 @@
+{
+  "source_sha256": "80da1cd616dca9ce4df927dd39901a25ed221d131b9c5de4a2c96a03f8b40fd7",
+  "output_sha256": "64e7f7a7b91a0ed7a2c4ddc9fc55129b975aa78ad4b0aae7fd04ba05a04a4af3",
+  "rom_file": "sfxj.04a",
+  "file_offset": "0x151d6",
+  "encrypted_before": "84f7",
+  "encrypted_after": "7dc0",
+  "cpu_instruction_address": "0x0951d4",
+  "original_instruction": "cmpi.w #$000a,d0",
+  "modified_instruction": "cmpi.w #$0002,d0",
+  "tests": {
+    "original_hcf": [
+      2,
+      2,
+      4,
+      6,
+      6
+    ],
+    "patched_hcf": [
+      2,
+      2,
+      4,
+      6,
+      8
+    ],
+    "original_old": [
+      2,
+      2,
+      4,
+      6,
+      8
+    ],
+    "patched_old": [
+      2,
+      2,
+      4,
+      6,
+      6
+    ],
+    "original_qcf": [
+      0,
+      0,
+      0
+    ],
+    "patched_qcf": [
+      0,
+      0,
+      0
+    ],
+    "original_forward": [
+      0
+    ],
+    "patched_forward": [
+      0
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "original_hcf": [
+    2,
+    2,
+    4,
+    6,
+    6
+  ],
+  "patched_hcf": [
+    2,
+    2,
+    4,
+    6,
+    8
+  ],
+  "original_old": [
+    2,
+    2,
+    4,
+    6,
+    8
+  ],
+  "patched_old": [
+    2,
+    2,
+    4,
+    6,
+    6
+  ],
+  "original_qcf": [
+    0,
+    0,
+    0
+  ],
+  "patched_qcf": [
+    0,
+    0,
+    0
+  ],
+  "original_forward": [
+    0
+  ],
+  "patched_forward": [
+    0
+  ]
+}

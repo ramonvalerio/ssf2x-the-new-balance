@@ -1,0 +1,53 @@
+# ------------------------------------------------------------------
+# Material proprietário (Capcom) — nunca versionar
+# ------------------------------------------------------------------
+
+# Emulador, ROMs, saves e configurações locais
+Fightcade/
+
+# ROMs e arquivos compactados (inclui os ZIPs entregues em characters/ e fixes/)
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*_enc
+
+# Binários, dumps descriptografados e chips de arcade
+*.bin
+*.rom
+*.dat
+*.nv
+*.chk
+*.nvram
+
+# Imagens de disco
+*.iso
+*.img
+
+# Disassembly de código da Capcom (as mudanças ficam nos scripts de work/ e nos .ips)
+*.asm
+
+# Cópias de segurança de ROMs
+backup/
+
+# ------------------------------------------------------------------
+# Ferramentas de terceiros (baixar separadamente)
+# ------------------------------------------------------------------
+tools/mbdcps2/
+tools/mbdcps2*
+tools/python/
+work/mbdcps2-release.json
+
+# ------------------------------------------------------------------
+# Arquivos locais e temporários
+# ------------------------------------------------------------------
+*.lnk
+__pycache__/
+*.pyc
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Os patches .ips SÃO versionados: contêm só as diferenças, sem a ROM.
+!*.ips

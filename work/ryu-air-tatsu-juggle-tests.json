@@ -1,0 +1,243 @@
+{
+  "falling_after_air_tatsu_super_proj": {
+    "original": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ],
+    "patched": [
+      [
+        true,
+        "0xff9934"
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ]
+  },
+  "standing_boxes_present": {
+    "original": [
+      [
+        true,
+        "0xff9914"
+      ],
+      [
+        true,
+        "0xff9924"
+      ],
+      [
+        true,
+        "0xff9934"
+      ]
+    ],
+    "patched": [
+      [
+        true,
+        "0xff9914"
+      ],
+      [
+        true,
+        "0xff9924"
+      ],
+      [
+        true,
+        "0xff9934"
+      ]
+    ]
+  },
+  "hitstun_boxes_present": {
+    "original": [
+      [
+        true,
+        "0xff9918"
+      ],
+      [
+        true,
+        "0xff992c"
+      ],
+      [
+        true,
+        "0xff9940"
+      ]
+    ],
+    "patched": [
+      [
+        true,
+        "0xff9918"
+      ],
+      [
+        true,
+        "0xff992c"
+      ],
+      [
+        true,
+        "0xff9940"
+      ]
+    ]
+  },
+  "other_attack_type": {
+    "original": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ],
+    "patched": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ]
+  },
+  "hadouken_type_0x3e": {
+    "original": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ],
+    "patched": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ]
+  },
+  "defender_not_in_hit_state": {
+    "original": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ],
+    "patched": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ]
+  },
+  "other_knockdown_reaction": {
+    "original": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ],
+    "patched": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ]
+  },
+  "owner_not_ryu": {
+    "original": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ],
+    "patched": [
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ],
+      [
+        false,
+        null
+      ]
+    ]
+  },
+  "timer_helpers_identical": true
+}

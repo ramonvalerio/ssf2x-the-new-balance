@@ -1,0 +1,73 @@
+{
+  "first_hit_high": {
+    "before_1hit_build": true,
+    "patched": true,
+    "without_juggle": false
+  },
+  "first_hit_low": {
+    "before_1hit_build": true,
+    "patched": true,
+    "without_juggle": false
+  },
+  "followup_high": {
+    "before_1hit_build": false,
+    "patched": false,
+    "without_juggle": false
+  },
+  "followup_just_above": {
+    "before_1hit_build": false,
+    "patched": false,
+    "without_juggle": false
+  },
+  "followup_at_limit": {
+    "before_1hit_build": false,
+    "patched": true,
+    "without_juggle": false
+  },
+  "followup_low": {
+    "before_1hit_build": false,
+    "patched": true,
+    "without_juggle": false
+  },
+  "followup_other_react": {
+    "before_1hit_build": false,
+    "patched": true,
+    "without_juggle": false
+  },
+  "low_but_not_hit_state": {
+    "before_1hit_build": false,
+    "patched": false,
+    "without_juggle": false
+  },
+  "low_other_attack": {
+    "before_1hit_build": false,
+    "patched": false,
+    "without_juggle": false
+  },
+  "low_owner_not_ryu": {
+    "before_1hit_build": false,
+    "patched": false,
+    "without_juggle": false
+  },
+  "first_hit_on_bounce": {
+    "before_1hit_build": true,
+    "patched": false,
+    "without_juggle": false
+  },
+  "first_hit_landed": {
+    "before_1hit_build": true,
+    "patched": false,
+    "without_juggle": false
+  },
+  "followup_on_ground": {
+    "before_1hit_build": false,
+    "patched": false,
+    "without_juggle": false
+  },
+  "real_boxes_present": {
+    "before_1hit_build": true,
+    "patched": true,
+    "without_juggle": true
+  },
+  "timer_helper_identical": true
+}

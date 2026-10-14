@@ -1,0 +1,341 @@
+{
+  "base_rom": "characters/ryu/new/crmk-super-cancel-window (Fei Long + janela do chute médio abaixado do Ryu)",
+  "base_zip_sha256": "9e0a1afa37c1223786955544ff435b93a9aa4e0d816db474e3160423736291a7",
+  "output_zip_sha256": "394c34f7f12c7cf1dbc32e2dcbbb666b5076fdc0c82ca4fa62fe0b1875640083",
+  "changed_files_vs_base": [
+    "sfxj.03c",
+    "sfxj.04a"
+  ],
+  "ips_base": "removido: patches individuais substituídos pela versão central em patches/",
+  "decrypted_output_matches_patched_binary": true,
+  "in_game_capture": "work/logs/air-tatsu.csv (antes da mudança): tatsu aéreo tipo $1C; defensor $3=$0E, $55=$1C e caixas de vulnerabilidade 0/0/0 durante a queda (~53 frames); projétil do Super tipo $42, sai ~22 frames após o comando; Ryu livre ~6 frames após pousar",
+  "cpu_changes": {
+    "0xbf562": "colisão com a 1ª caixa de vulnerabilidade do defensor: bne.w/rts -> jmp $7fb5c",
+    "0x7fb5c-0x7fb77": "sem caixa: exige ataque tipo $42 (projétil do Super)",
+    "0x7fe86-0x7fea1": "exige defensor em golpe ($3=$0E); reação $1C -> regra do 1º hit (0x85588); outra reação -> regra de altura (0x856de)",
+    "0x852e2-0x852fd": "exige dono do projétil = Ryu ($391=0); usa caixa id 1 da tabela de pernas do defensor",
+    "0x7fb48, 0x7fe72": "helpers de timer do Ryu passam a ler a tabela idêntica em 0x7f9d0",
+    "0x852ce": "helper de timer do Ken passa a ler a tabela idêntica em 0x85410",
+    "0x85588-0x855a3": "1º hit: só durante a queda ($5=4), não no pouso nem no quique",
+    "0x856de-0x856f9": "hits seguintes: só no ar e baixo (40 < y <= 64)",
+    "0x85574, 0x856ca": "helpers de timer do Ken passam a ler a tabela idêntica em 0x85410"
+  },
+  "tests": {
+    "falling_after_air_tatsu_super_proj": {
+      "original": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ],
+      "patched": [
+        [
+          true,
+          "0xff9934"
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ]
+    },
+    "standing_boxes_present": {
+      "original": [
+        [
+          true,
+          "0xff9914"
+        ],
+        [
+          true,
+          "0xff9924"
+        ],
+        [
+          true,
+          "0xff9934"
+        ]
+      ],
+      "patched": [
+        [
+          true,
+          "0xff9914"
+        ],
+        [
+          true,
+          "0xff9924"
+        ],
+        [
+          true,
+          "0xff9934"
+        ]
+      ]
+    },
+    "hitstun_boxes_present": {
+      "original": [
+        [
+          true,
+          "0xff9918"
+        ],
+        [
+          true,
+          "0xff992c"
+        ],
+        [
+          true,
+          "0xff9940"
+        ]
+      ],
+      "patched": [
+        [
+          true,
+          "0xff9918"
+        ],
+        [
+          true,
+          "0xff992c"
+        ],
+        [
+          true,
+          "0xff9940"
+        ]
+      ]
+    },
+    "other_attack_type": {
+      "original": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ],
+      "patched": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ]
+    },
+    "hadouken_type_0x3e": {
+      "original": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ],
+      "patched": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ]
+    },
+    "defender_not_in_hit_state": {
+      "original": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ],
+      "patched": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ]
+    },
+    "other_knockdown_reaction": {
+      "original": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ],
+      "patched": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ]
+    },
+    "owner_not_ryu": {
+      "original": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ],
+      "patched": [
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ],
+        [
+          false,
+          null
+        ]
+      ]
+    },
+    "timer_helpers_identical": true
+  },
+  "version": 2,
+  "previous_version_zip": "backup/ssf2xjr1-ryu-air-tatsu-juggle-1hit.zip (860b6fda38288f12f6c8fa44032bd13f5687f17ce2714a4df7897a3701f9901d)",
+  "tests_v2": {
+    "first_hit_high": {
+      "before_1hit_build": true,
+      "patched": true,
+      "without_juggle": false
+    },
+    "first_hit_low": {
+      "before_1hit_build": true,
+      "patched": true,
+      "without_juggle": false
+    },
+    "followup_high": {
+      "before_1hit_build": false,
+      "patched": false,
+      "without_juggle": false
+    },
+    "followup_just_above": {
+      "before_1hit_build": false,
+      "patched": false,
+      "without_juggle": false
+    },
+    "followup_at_limit": {
+      "before_1hit_build": false,
+      "patched": true,
+      "without_juggle": false
+    },
+    "followup_low": {
+      "before_1hit_build": false,
+      "patched": true,
+      "without_juggle": false
+    },
+    "followup_other_react": {
+      "before_1hit_build": false,
+      "patched": true,
+      "without_juggle": false
+    },
+    "low_but_not_hit_state": {
+      "before_1hit_build": false,
+      "patched": false,
+      "without_juggle": false
+    },
+    "low_other_attack": {
+      "before_1hit_build": false,
+      "patched": false,
+      "without_juggle": false
+    },
+    "low_owner_not_ryu": {
+      "before_1hit_build": false,
+      "patched": false,
+      "without_juggle": false
+    },
+    "first_hit_on_bounce": {
+      "before_1hit_build": true,
+      "patched": false,
+      "without_juggle": false
+    },
+    "first_hit_landed": {
+      "before_1hit_build": true,
+      "patched": false,
+      "without_juggle": false
+    },
+    "followup_on_ground": {
+      "before_1hit_build": false,
+      "patched": false,
+      "without_juggle": false
+    },
+    "real_boxes_present": {
+      "before_1hit_build": true,
+      "patched": true,
+      "without_juggle": true
+    },
+    "timer_helper_identical": true
+  }
+}

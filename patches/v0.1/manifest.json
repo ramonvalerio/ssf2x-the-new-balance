@@ -1,0 +1,27 @@
+{
+  "name": "SSF2X - The New Balance",
+  "version": "v0.1",
+  "romset": "ssf2xjr1",
+  "parts": [
+    {
+      "patch": "ssf2x-the-new-balance-v0.1-part1.ips",
+      "file": "sfxj.03c",
+      "original_sha256": "b882934292a392d176dbb20efc0129b57cedd465af0f343a301c3f67f5c822ab",
+      "patched_sha256": "dcb29942960984d2323cfa7b0c2adfb9c3c74e6b6ea128956d7f30bc28f8a643",
+      "size": 178
+    },
+    {
+      "patch": "ssf2x-the-new-balance-v0.1-part2.ips",
+      "file": "sfxj.04a",
+      "original_sha256": "6d782ac2d5a994bcf31a087575faba0d0bf8f6fa38c863849de2d52e06d9e8b3",
+      "patched_sha256": "ee5f264a1fafdd39bc199505d86719d9db62ea42106d329b8d3914d503cd3888",
+      "size": 641
+    }
+  ],
+  "includes": [
+    "fixes/timer-tables",
+    "characters/fei-long: chicken-wing-half-circle, rekka-super",
+    "characters/ryu: crmk-super-cancel-window, air-tatsu-super-juggle (v2)",
+    "characters/ken: shoryuken-hit2-pushback (v3)"
+  ]
+}

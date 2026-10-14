@@ -1,0 +1,33 @@
+REKKA → SUPER — FEI LONG — SSF2XJR1
+
+Na janela que vem depois do 2º Rekka (a mesma em que o jogo aceita o 3º Rekka), agora também é possível cancelar para o Super (Rekka Shinken) com o comando normal dele: baixo, baixo-frente, frente, baixo, baixo-frente, frente + soco (236236 + P), com a barra cheia.
+
+- Sem barra cheia, o comando do Super é ignorado e a janela continua aceitando só o 3º Rekka.
+- O 1º e o 3º Rekka não mudam: depois deles não é possível cancelar para o Super.
+- O Super sai exatamente como no uso normal: mesmo dano, mesmas propriedades e consumo da barra inteira.
+- Vale só para o Fei Long novo (o antigo não tem Super).
+
+Esta ROM já inclui a mudança anterior do Chicken Wing em meia-lua (41236 + K).
+
+COMO TESTAR
+1. Feche o emulador.
+2. A ROM anterior (só com o Chicken Wing) foi salva em backup/ssf2xjr1-chicken-wing.zip. A original sem nenhuma mudança está em backup/ssf2xjr1.zip.
+3. Esta ROM já foi copiada para Fightcade/emulator/fbneo/ROMs/ssf2xjr1.zip.
+4. Abra Fightcade/emulator/fbneo/fcadefbneo.exe e carregue ssf2xjr1 para teste local.
+5. Com o Fei Long novo e a barra cheia, faça o 1º Rekka, o 2º Rekka e então 236236 + P. O Super deve sair e a barra deve zerar.
+6. Repita sem a barra cheia: o Super não deve sair, e 236 + P deve continuar dando o 3º Rekka.
+7. Repita a sequência 1º → 2º → 3º sem usar o Super e confirme que nada mudou. Teste dos dois lados da tela.
+8. Para restaurar, recoloque o ZIP de backup desejado em Fightcade/emulator/fbneo/ROMs/ssf2xjr1.zip.
+
+A alteração muda o CRC de sfxj.04a; o emulador pode informar divergência em relação ao conjunto original. Esta ROM é destinada a teste local.
+
+VALIDAÇÃO
+A checagem foi executada em emulação 68000 isolada com Unicorn, comparando a ROM anterior com a modificada. O Super sai na janela do 2º Rekka com a barra cheia. Não sai nos frames ativos do 2º Rekka, nas janelas do 1º e do 3º, sem barra cheia, com o jogo pausado nem durante outro especial. O Super no neutro funciona igual ao de antes, com e sem barra. Foram testadas as estruturas de memória de P1 e P2. As tabelas de tempo dos comandos do Super e do Flame Kick produzem os mesmos valores de antes.
+A ROM final foi descriptografada novamente e corresponde exatamente ao binário alterado. Só sfxj.04a mudou (85 bytes cifrados); os demais arquivos são idênticos.
+AINDA NÃO TESTADO: uma partida real no Fightcade. Pontos a observar nesse teste:
+- se o Fei Long desliza durante a entrada do Super;
+- se a janela parece longa demais no fim da animação do 2º Rekka.
+
+PATCH: não há mais patches por mudança. A versão completa fica em patches/ (ex.: patches/v0.1/) e é aplicada sobre a sua própria ROM com: python tools/build_rom.py <ssf2xjr1.zip original> <saida.zip>
+Detalhes e hashes: verification.json.
+Ferramenta CPS2: https://github.com/MBDesu/mbdcps2 (v2.1.1).
