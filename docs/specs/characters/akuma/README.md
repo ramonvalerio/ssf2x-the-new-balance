@@ -5,7 +5,7 @@ O Akuma tem uma única versão (id 16, sem versão antiga).
 | Spec | Alteração | Status |
 |---|---|---|
 | [0012](new/0012-teleporte-com-tres-botoes-em-tres-frames.md) | Teleporte com os 3 botões em até 3 frames | Entregue (v0.6) |
-| 0013 | Akuma sempre habilitado na seleção de personagem | Em análise (ver nota) |
+| 0013 | Akuma sempre habilitado na seleção de personagem | Pendente — branch `feature/akuma-select` (slot à esquerda do Ken) |
 
 ## Como o Akuma funciona hoje (levantado em 2026-10-14)
 
