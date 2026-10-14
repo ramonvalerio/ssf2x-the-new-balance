@@ -1,6 +1,6 @@
-"""Dhalsim (new and old) teleport: all 3 punches (or 3 kicks), but spread over up to 3 frames.
+"""Dhalsim (new and old) and Akuma teleport: all 3 punches (or 3 kicks), but spread over up to 3 frames.
 
-The teleport recognizer's last step calls a check routine (new 0x8af1a, old 0x9f11e, identical, used
+The teleport recognizer's last step calls a check routine (new 0x8af1a, old 0x9f11e, Akuma 0xa7fc8, identical, used
 only there) with d1 = $70 (punches) or $700 (kicks). Original: Z=1 when ALL buttons of the mask were
 pressed on this same frame, or all released on this same frame (negative edge).
 
@@ -68,7 +68,7 @@ put(T2, bytes.fromhex('302e0392') + bytes.fromhex('4640') + bytes.fromhex('c06e0
         + bytes.fromhex('4e75'))                           # T2+16 yes: rts (Z=1 from the press check)
 assert b[T2 + 16:T2 + 18] == bytes.fromhex('4e75')
 
-for entry in (0x8af1a, 0x9f11e):
+for entry in (0x8af1a, 0x9f11e, 0xa7fc8):
     assert b[entry:entry + 32] == ORIG, hex(entry)
     b[entry:entry + 6] = bytes.fromhex('4ef9') + T1.to_bytes(4, 'big')   # jmp T1 (return address untouched)
 assert len(b) == len(base)

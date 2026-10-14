@@ -49,7 +49,7 @@ cases = [
     ('2 socos + 1 chute',                 0x70,  [0, LP | MP | LK],                False, False),
 ]
 res = {}
-for entry, who in ((0x8af1a, 'novo'), (0x9f11e, 'antigo')):
+for entry, who in ((0x8af1a, 'novo'), (0x9f11e, 'antigo'), (0xa7fc8, 'akuma')):
     for name, mask, frames, eo, en in cases:
         (zo, _), (zn, d1n) = run_frames('original', entry, mask, frames), run_frames('nova', entry, mask, frames)
         res[f'{who}: {name}'] = {'original': zo, 'nova': zn}

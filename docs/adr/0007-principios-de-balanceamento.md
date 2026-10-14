@@ -35,7 +35,12 @@ Quando um combo é executado do mesmo jeito, o resultado deve ser o mesmo contra
 - Validar com simulação ou emulação fiel ao CPS2 (`work/cps2emu.py`, ADR-0006) e confirmar no jogo.
 - Para pares de personagens, fazer um levantamento (ex.: `work/analyze_ken_dp.py`) e aplicar a mesma regra a todos os casos encontrados, não só ao primeiro relatado.
 
-### 5. Exceções
+### 5. Entrada sem sorte de frame
+Nenhuma regra depende de dois botões caírem no **mesmo frame** de leitura (60 por segundo). Quando um comando exige vários botões, ele aceita os botões apertados dentro de uma janela de 3 frames. Quando um comando exige timing (por exemplo, reversal ao levantar), a janela é a que um jogador experiente consegue no original com piano e negative edge, mas com um único toque.
+- Aplicado em: reversal ao levantar (Spec 0009), teleporte do Dhalsim novo e antigo (Specs 0010/0011) e do Akuma (Spec 0012). Uma varredura do código encontrou só esses três pontos com exigência de botões simultâneos.
+- O mesmo vale para o código de seleção do Akuma (3 socos no mesmo frame, em `0xe960`).
+
+### 6. Exceções
 - Situações de canto de tela, distância máxima, trocas simultâneas e outros casos-limite são avaliados separadamente. Não entram automaticamente no princípio 2.
 - Qualquer desvio destes princípios precisa de um ADR ou de uma spec própria explicando o motivo.
 

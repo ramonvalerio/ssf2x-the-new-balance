@@ -28,3 +28,4 @@ Por que dois arquivos? No CPS2, um patch IPS vale para um único arquivo interno
 | v0.3 | v0.2 + global: janela de 6 frames para reversal no levantar (spec 0009). |
 | v0.4 | v0.3 com a janela de reversal reduzida para 4 frames + Dhalsim (novo e antigo): teleporte com 2 socos ou 2 chutes (specs 0010/0011). |
 | v0.5 | v0.4 com o teleporte do Dhalsim voltando a exigir os 3 botões, agora aceitos em até 3 frames (specs 0010/0011). |
+| v0.6 | v0.5 + Akuma: teleporte com os 3 botões em até 3 frames (spec 0012). |

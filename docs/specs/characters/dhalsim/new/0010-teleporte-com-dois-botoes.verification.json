@@ -127,6 +127,70 @@
     "original": false,
     "nova": false
   },
+  "akuma: 3 socos no mesmo frame": {
+    "original": true,
+    "nova": true
+  },
+  "akuma: 3 socos em 2 frames (LP | MP+HP)": {
+    "original": false,
+    "nova": true
+  },
+  "akuma: 3 socos em 3 frames (LP|MP|HP)": {
+    "original": false,
+    "nova": true
+  },
+  "akuma: 3 socos em 4 frames (fora)": {
+    "original": false,
+    "nova": false
+  },
+  "akuma: so 2 socos": {
+    "original": false,
+    "nova": false
+  },
+  "akuma: so 1 soco": {
+    "original": false,
+    "nova": false
+  },
+  "akuma: nada": {
+    "original": false,
+    "nova": false
+  },
+  "akuma: segurando 2 ha muito, aperta 1": {
+    "original": false,
+    "nova": false
+  },
+  "akuma: soltar 3 juntos": {
+    "original": true,
+    "nova": true
+  },
+  "akuma: soltar 3 em 2 frames": {
+    "original": false,
+    "nova": false
+  },
+  "akuma: 3 chutes no mesmo frame": {
+    "original": true,
+    "nova": true
+  },
+  "akuma: 3 chutes em 3 frames": {
+    "original": false,
+    "nova": true
+  },
+  "akuma: 3 chutes em 4 frames (fora)": {
+    "original": false,
+    "nova": false
+  },
+  "akuma: socos nao contam como chutes": {
+    "original": false,
+    "nova": false
+  },
+  "akuma: chutes nao contam como socos": {
+    "original": false,
+    "nova": false
+  },
+  "akuma: 2 socos + 1 chute": {
+    "original": false,
+    "nova": false
+  },
   "per_frame_hook_keeps_original_and_reversal": true,
   "converted_timer_helpers_identical": true
 }
