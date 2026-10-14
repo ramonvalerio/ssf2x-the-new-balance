@@ -34,11 +34,16 @@ local logfh = nil
 local function log_row(now)
   if not logfh then return end
   local b1, b2 = 0xFF844E, 0xFF884E
-  logfh:write(string.format("%d,%d,%d,%d,%d,%d,%d,%d\n",
+  logfh:write(string.format("%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n",
     now,
     memory.readwordsigned(b1 + 0x06), memory.readwordsigned(b1 + 0x0A), memory.readbyte(b1 + 3), memory.readbyte(b1 + 0x88),
-    memory.readwordsigned(b2 + 0x06), memory.readwordsigned(b2 + 0x0A), memory.readbyte(b2 + 3)))
+    memory.readbyte(b1 + 0x55), memory.readbyte(b1 + 0x2b4),
+    memory.readwordsigned(b2 + 0x06), memory.readwordsigned(b2 + 0x0A), memory.readbyte(b2 + 3),
+    memory.readbyte(b2 + 0x55), memory.readbyte(b2 + 0x88)))
 end
+
+local freeze3_until = 0   -- enquanto > now, força P1.$3 = 0 todo frame (ignora hitstun do CPU p/ diagnostico)
+local godmode = false     -- enquanto true, mantem a vida de P1 no maximo todo frame
 
 local holds = {}   -- botão -> frame de término
 local start = emu.framecount()
@@ -57,9 +62,19 @@ while true do
         dumpmem(p.rest .. "-obj.bin", 0x708000, 0x2000)
         dumpmem(p.rest .. "-vram.bin", 0x900000, 0x30000)
         dumpmem(p.rest .. "-wram.bin", 0xff0000, 0x10000)
+      elseif p.act == "freeze3" then
+        -- <frame> freeze3 <duracao>   mantem P1.$3=0 (idle) todo frame, ignorando acoes do CPU
+        freeze3_until = now + tonumber(p.rest)
+      elseif p.act == "godmode" then
+        godmode = (p.rest ~= "off")
+      elseif p.act == "poke" then
+        -- <frame> poke <P1|P2> <offset_hex> <valor>   ex.: 2300 poke P1 2b4 48
+        local pl, off, val = p.rest:match("^(%S+)%s+(%S+)%s+(%d+)$")
+        local base = (pl == "P2") and 0xFF884E or 0xFF844E
+        memory.writebyte(base + tonumber(off, 16), tonumber(val))
       elseif p.act == "logstart" then
         logfh = assert(io.open(OUT .. "log.csv", "w"))
-        logfh:write("frame,p1_x,p1_y,p1_st3,p1_mv88,p2_x,p2_y,p2_st3\n")
+        logfh:write("frame,p1_x,p1_y,p1_st3,p1_mv88,p1_r55,p1_bar,p2_x,p2_y,p2_st3,p2_r55,p2_mv88\n")
       elseif p.act == "end" then
         if logfh then logfh:close(); logfh = nil end
         local fh = io.open(OUT .. "done.txt", "w"); fh:write("ok " .. now); fh:close()
@@ -71,6 +86,10 @@ while true do
     if now < untilf then joy[btn] = true end
   end
   joypad.set(joy)
+  if godmode then memory.writebyte(0xFF8479, 144) end
+  if now < freeze3_until then
+    memory.writebyte(0xFF844E + 3, 0)
+  end
   log_row(now)
   gui.text(4, 4, "AUTO " .. now)
   emu.frameadvance()
