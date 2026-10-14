@@ -1,6 +1,6 @@
 # Spec 0002: Rekka Ken do Fei Long — cancelar para Super na janela do 2º golpe
 
-Status: Entregue — `docs/specs/characters/fei-long/new/0002-rekka-cancela-para-super.md/` (pendente: teste em partida real no Fightcade)
+Status: Entregue (v0.1) — pendente de confirmação em partida real
 ADR relacionado: `docs/adr/0002-janela-do-segundo-rekka-aceita-super.md`
 
 ## Personagem / golpe

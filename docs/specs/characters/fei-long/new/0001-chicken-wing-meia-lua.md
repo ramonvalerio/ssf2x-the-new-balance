@@ -1,6 +1,6 @@
 # Spec 0001: Chicken Wing do Fei Long — comando em meia-lua
 
-Status: Entregue — `docs/specs/characters/fei-long/new/0001-chicken-wing-meia-lua.md/`
+Status: Entregue (v0.1) — pendente de confirmação em partida real
 
 ## Personagem / golpe
 
@@ -20,7 +20,7 @@ Dano, propriedades de hit, startup/recovery, e o comando do Fei Long antigo.
 
 1. Fechar o emulador.
 2. Backup de `Fightcade/emulator/fbneo/ROMs/ssf2xjr1.zip` fora da pasta `ROMs`.
-3. Copiar `docs/specs/characters/fei-long/new/0001-chicken-wing-meia-lua.md/ssf2xjr1.zip` para `Fightcade/emulator/fbneo/ROMs`, mantendo o nome.
+3. Montar a ROM com `python tools/build_rom.py <ssf2xjr1.zip original> <saida.zip>` e copiar o resultado para `Fightcade/emulator/fbneo/ROMs` com o nome `ssf2xjr1.zip`.
 4. Abrir `Fightcade/emulator/fbneo/fcadefbneo.exe`, carregar `ssf2xjr1`.
 5. Selecionar Fei Long novo, testar 41236+K (fraco/médio/forte) dos dois lados. Restaurar com o ZIP de backup se necessário.
 

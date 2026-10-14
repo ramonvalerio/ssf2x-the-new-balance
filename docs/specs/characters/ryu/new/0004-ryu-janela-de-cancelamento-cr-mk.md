@@ -1,6 +1,6 @@
 # Spec 0004: Ryu — janela de cancelamento do chute médio abaixado para Super
 
-Status: Entregue — `docs/specs/characters/ryu/new/0004-ryu-janela-de-cancelamento-cr-mk.md/` (pendente: teste em partida real no Fightcade)
+Status: Entregue (v0.1) — confirmado no jogo pelo usuário
 Substitui: Spec 0003 (descartada)
 ADR relacionado: `docs/adr/0004-janela-de-cancelamento-pela-caixa-de-ataque.md`
 

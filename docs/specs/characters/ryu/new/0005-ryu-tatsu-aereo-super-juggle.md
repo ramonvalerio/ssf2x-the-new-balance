@@ -1,6 +1,6 @@
 # Spec 0005: Ryu — Super acerta o adversário caindo depois do tatsu aéreo
 
-Status: Entregue (versão 2) — `docs/specs/characters/ryu/new/0005-ryu-tatsu-aereo-super-juggle.md/` (v1 testada no jogo: funcionou com 1 hit; v2 pendente de teste)
+Status: Entregue (v0.1, versão 2) — v1 confirmada no jogo (1 hit); v2 pendente de confirmação
 ADR relacionado: `docs/adr/0005-caixa-de-vulnerabilidade-sintetica-para-juggle.md`
 
 ## Pedido

@@ -1,6 +1,6 @@
 # Spec 0003: Ryu — buffer de comando para o Super (cancelamento facilitado)
 
-Status: Descartado (2026-10-14) — o usuário não conseguiu executar; substituído pela Spec 0004. A entrega em `docs/specs/characters/ryu/new/0003-ryu-buffer-do-super.md/` fica só como histórico.
+Status: Descartado (2026-10-14) — o usuário não conseguiu executar; substituído pela Spec 0004. Não incluído em nenhuma versão.
 ADR relacionado: `docs/adr/0003-buffer-de-comando-reaproveitado.md`
 
 ## Personagem / golpe

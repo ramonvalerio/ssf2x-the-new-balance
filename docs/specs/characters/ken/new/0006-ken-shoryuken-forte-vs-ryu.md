@@ -1,6 +1,6 @@
 # Spec 0006: Ken novo — Shoryuken forte acerta os 3 hits no Ryu, no Ken e no Claw
 
-Status: Entregue — `docs/specs/characters/ken/new/0006-ken-shoryuken-forte-vs-ryu.md/` (pendente: teste no jogo)
+Status: Entregue (v0.1) — confirmado no jogo contra Ken e Claw; Ryu pendente de confirmação
 ADR relacionado: `docs/adr/0006-leituras-de-dados-no-cps2.md` (forma de liberar espaço e testes)
 
 ## Problema
