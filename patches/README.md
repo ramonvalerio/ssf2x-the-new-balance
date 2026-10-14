@@ -30,3 +30,5 @@ Por que dois arquivos? No CPS2, um patch IPS vale para um único arquivo interno
 | v0.5 | v0.4 com o teleporte do Dhalsim voltando a exigir os 3 botões, agora aceitos em até 3 frames (specs 0010/0011). |
 | v0.6 | v0.5 + Akuma: teleporte com os 3 botões em até 3 frames (spec 0012). |
 | v0.7 | v0.6 + Ryu: soco forte (em pé e abaixado) cancelável em Super durante os frames ativos, mesma regra do chute médio abaixado (spec 0014). |
+| v0.8 | v0.7 + Fei Long: Flame Kick liberado na janela após o segundo Rekka (spec 0015). |
+| v0.9 | v0.8 + Ken: 2º hit do Shoryuken forte cancela no Super com a barra cheia (spec 0017). |

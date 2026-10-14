@@ -1,0 +1,37 @@
+{
+  "base_rom": "ssf2xjr1 v0.8 (Fei Long: Flame Kick liberado na janela do 2o Rekka).",
+  "base_zip_sha256": "c75904f856387ade3c3bf65e17400090fbfb4184115627fcfae6ab2a0b783796",
+  "output_zip_sha256": "9806e6ad5a8ac15bf7846a2d85b9679f8b15ea58dd90598719df31184d4cbd86",
+  "changed_files_vs_base": [
+    "sfxj.04a"
+  ],
+  "decrypted_output_matches_patched_binary": true,
+  "cpu_changes": {
+    "0x851c0": "jsr $452a.w vira bsr.w para a checagem nova (CHUNK_A, 0x85410)",
+    "0x85410-0x8542f": "CHUNK_A: roda $452a original; se falhar, pula para CHUNK_B (0x85b60); se nao, rts",
+    "0x85b60-0x85b7f": "CHUNK_B: libera o Super se $88=4 (Shoryuken), caixa de ataque atual=43 (2o hit) e $2b4=$30 (barra cheia)",
+    "0x85400-0x8540f / 0x85b50-0x85b5f": "dois ajudantes de temporizacao do Ken convertidos para a rotina compartilhada g (0x8dc60), liberando os 32 bytes de cada um dos chunks acima"
+  },
+  "tests": {
+    "DP_2o_hit_barra_cheia": {
+      "tail": true,
+      "abort": false
+    },
+    "DP_1o_hit_barra_cheia": {
+      "tail": false,
+      "abort": true
+    },
+    "DP_2o_hit_barra_baixa": {
+      "tail": false,
+      "abort": true
+    },
+    "outro_golpe_2o_hit_barra": {
+      "tail": false,
+      "abort": true
+    },
+    "neutro_sem_golpe": {
+      "tail": false,
+      "abort": true
+    }
+  }
+}

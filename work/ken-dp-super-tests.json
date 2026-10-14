@@ -1,0 +1,22 @@
+{
+  "DP_2o_hit_barra_cheia": {
+    "tail": true,
+    "abort": false
+  },
+  "DP_1o_hit_barra_cheia": {
+    "tail": false,
+    "abort": true
+  },
+  "DP_2o_hit_barra_baixa": {
+    "tail": false,
+    "abort": true
+  },
+  "outro_golpe_2o_hit_barra": {
+    "tail": false,
+    "abort": true
+  },
+  "neutro_sem_golpe": {
+    "tail": false,
+    "abort": true
+  }
+}

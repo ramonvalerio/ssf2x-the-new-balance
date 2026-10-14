@@ -1,0 +1,24 @@
+{
+  "name": "SSF2X - The New Balance",
+  "version": "v0.9",
+  "romset": "ssf2xjr1",
+  "parts": [
+    {
+      "patch": "ssf2x-the-new-balance-v0.9-part1.ips",
+      "file": "sfxj.03c",
+      "original_sha256": "b882934292a392d176dbb20efc0129b57cedd465af0f343a301c3f67f5c822ab",
+      "patched_sha256": "3c7ed3df819b1437c06b2093e9e7f96d58115c5fffc4a758bf81dd7134824953",
+      "size": 222
+    },
+    {
+      "patch": "ssf2x-the-new-balance-v0.9-part2.ips",
+      "file": "sfxj.04a",
+      "original_sha256": "6d782ac2d5a994bcf31a087575faba0d0bf8f6fa38c863849de2d52e06d9e8b3",
+      "patched_sha256": "ae6c9fc1f6ef8f9c411d35a92c6c797bddb3aa219d6b5d536a1cf2c55f609ec1",
+      "size": 1377
+    }
+  ],
+  "includes": [
+    "Ken (novo): 2º hit do Shoryuken forte cancela no Super com a barra cheia (spec 0017)"
+  ]
+}
